@@ -1,70 +1,100 @@
-# Getting Started with Create React App
+# RefuID – Refugee Digital Identity System
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+RefuID is a prototype system designed to help border authorities manage refugees who arrive without official documents.  
+The system creates a **temporary digital identity using biometric data** and allows officers to verify identities using **QR-based verification**.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Problem
 
-### `npm start`
+Millions of refugees arrive at borders without identification due to war, displacement, or disasters.  
+This makes it difficult for authorities to:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Verify identities
+- Prevent duplicate registrations
+- Track refugee status across checkpoints
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+RefuID provides a **digital identity solution for undocumented refugees**.
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Solution
 
-### `npm run build`
+RefuID captures biometric data and generates a **Digital Border ID** for each refugee.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The system:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Captures **facial image using webcam**
+2. Records a **voice sample**
+3. Generates a **unique digital identity**
+4. Assigns a **temporary validity period**
+5. Produces a **QR code for identity verification**
+6. Allows officers to **search and verify identities**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## Features
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Face capture using webcam
+- Voice recording
+- Digital refugee identity generation
+- Risk level classification
+- QR code verification system
+- Border officer search dashboard
+- Temporary identity validity (3 months)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Tech Stack
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Frontend
+- React.js
+- HTML
+- CSS
+- Web Camera API
 
-## Learn More
+### Backend
+- Python
+- FastAPI
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Identity System
+- QR Code Verification
+- Temporary in-memory storage (prototype)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Demo Workflow
 
-### Analyzing the Bundle Size
+1. Border officer captures refugee **face image**
+2. Officer records a **voice sample**
+3. System generates **Digital Border ID**
+4. Risk level is assigned
+5. QR code is generated
+6. Officers can scan the QR to verify identity instantly
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+## Future Improvements
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- PostgreSQL database integration
+- Advanced biometric matching
+- Emotion and stress detection from voice
+- Multi-checkpoint identity synchronization
+- Secure biometric encryption
 
-### Advanced Configuration
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Project Purpose
 
-### Deployment
+This project demonstrates how **biometric technology and digital identity systems** can support humanitarian efforts by helping authorities manage refugee identification safely and efficiently.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+---
 
-### `npm run build` fails to minify
+## Author
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Dharshini A  
+Hackathon Project – RefuID
+
+## System Architecture
